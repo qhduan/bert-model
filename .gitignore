@@ -1,0 +1,9 @@
+*.py[cod]
+.ipynb_checkpoints
+/hub
+/bert_tokenizer
+/output
+/pretrained
+/tf1env
+/zip
+.DS_Store
