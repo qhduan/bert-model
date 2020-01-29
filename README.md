@@ -29,3 +29,20 @@ tf1env/bin/pip install tensorflow==1.15.0 tensorflow-hub
 ## 打包
 
 运行`./tar.sh`
+
+## 使用
+
+参考： https://colab.research.google.com/drive/1KkjPVn1s6_tSznhox5RxuKF9Igm8VAbE
+
+原模型下载： https://github.com/ymcui/Chinese-BERT-wwm
+
+地址：
+
+```
+https://github.com/qhduan/bert-model/releases/download/1.0/bert_wwm_zh_pool.tar.gz
+https://github.com/qhduan/bert-model/releases/download/1.0/bert_wwm_zh_seq.tar.gz
+https://github.com/qhduan/bert-model/releases/download/1.0/bert_zh_pool.tar.gz
+https://github.com/qhduan/bert-model/releases/download/1.0/bert_zh_seq.tar.gz
+https://github.com/qhduan/bert-model/releases/download/1.0/roberta_wwm_zh_pool.tar.gz
+https://github.com/qhduan/bert-model/releases/download/1.0/roberta_wwm_zh_seq.tar.gz
+```
