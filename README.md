@@ -34,6 +34,8 @@ tf1env/bin/pip install tensorflow==1.15.0 tensorflow-hub
 
 参考： https://colab.research.google.com/drive/1KkjPVn1s6_tSznhox5RxuKF9Igm8VAbE
 
+或本代码目录下的`test_bert_chinese.ipynb`文件
+
 原模型下载： https://github.com/ymcui/Chinese-BERT-wwm
 
 地址：
