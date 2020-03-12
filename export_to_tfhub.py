@@ -120,7 +120,7 @@ def module_fn(is_training):
   # By adding `config_file, vocab_model and vocab_file`
   # to the ASSET_FILEPATHS collection, TF-Hub will
   # rewrite this tensor so that this asset is portable.
-  tf.add_to_collection(tf.GraphKeys.ASSET_FILEPATHS, config_file)
+  # tf.add_to_collection(tf.GraphKeys.ASSET_FILEPATHS, config_file)
   # tf.add_to_collection(tf.GraphKeys.ASSET_FILEPATHS, vocab_model)
   # tf.add_to_collection(tf.GraphKeys.ASSET_FILEPATHS, vocab_file)
 
