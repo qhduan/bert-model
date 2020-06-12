@@ -96,6 +96,9 @@ def module_fn(is_training):
   bert_config_path = os.path.join(
       FLAGS.bert_directory, "bert_config.json")
   bert_config = modeling.BertConfig.from_json_file(bert_config_path)
+
+  bert_config.num_hidden_layers = int(os.environ.get('NUM_HIDDEN_LAYERS', bert_config.num_hidden_layers))
+
   model = modeling.BertModel(
       config=bert_config,
       is_training=is_training,

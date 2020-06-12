@@ -1,9 +1,11 @@
 *.py[cod]
 .ipynb_checkpoints
 /hub
+/hubs
 /bert_tokenizer
 /bert_token2ids
 /output
+/outputs
 /pretrained
 /tf1env
 /zip
