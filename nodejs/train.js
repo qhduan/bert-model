@@ -5,6 +5,11 @@ const { exit } = require('process')
 const BertWordPieceTokenizer = require('tokenizers').BertWordPieceTokenizer
 
 
+/**
+ * 构建文本分类模型
+ * 输入的是BERT输出的sequence_output序列
+ * 输出2分类softmax
+ */
 function buildModel() {
     const input = tf.input({shape: [null, 768], dtype: 'float32'})
     const rnn = tf.layers.bidirectional({
@@ -28,6 +33,10 @@ function buildModel() {
     const wordPieceTokenizer = await BertWordPieceTokenizer.fromOptions({ vocabFile: "./vocab.txt" })
     const bert = await tf.node.loadSavedModel('./bert')
 
+    // 构建数据流
+    // 文本输入会经过tokenizers
+    // 然后用bert计算出sequence_output
+    // 不更新bert的参数是因为nodejs现在还无法训练读取的模型
     function makeGenerator(objs, batchSize) {
         function* dataGenerator() {
             let xs = []
