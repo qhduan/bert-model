@@ -5,6 +5,21 @@
 - 最好配合huggingface/tokenizers 使用（当然中文简单按字分词也差不太多）
 - 配合hub食用更佳，当然下载下来只用tf.keras.models.load_model也可以
 
+## 文本分类举例(ipynb)
+
+python:
+
+- [py文本分类](python/text_classification.ipynb)
+- [py文本分类 - 不更新BERT参数](python/text_classification_freezed.ipynb)
+
+上面两个版本的区别相当于，一个在tensorflow_hub.load的时候，trainable=True，另一个trainable=False
+
+| | 更新BERT | 不更新 |
+| --- | ---| --- |
+| pros | 部分任务会效果更好 | 训练速度较快 |
+| cons | 训练速度会慢，因为要保存大量BERT的梯度 | 部分任务效果可能变差 |
+
+
 ## 简单的例子
 
 下面是一个简单的文本分类例子

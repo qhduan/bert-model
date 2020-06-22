@@ -1,0 +1,23 @@
+{
+  "name": "bert-model",
+  "version": "1.0.0",
+  "description": "## 使用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qhduan/bert-model.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qhduan/bert-model/issues"
+  },
+  "homepage": "https://github.com/qhduan/bert-model#readme",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^2.0.1",
+    "tokenizers": "^0.6.2"
+  }
+}
