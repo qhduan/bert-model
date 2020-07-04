@@ -149,10 +149,12 @@ https://code.aliyun.com/qhduan/zh-bert-wwm/raw/51f499fb7df00cf4d0f283cefd0a7cb34
 [ymcui/Chinese-BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm/)
 发布的预训练模型，12层，文件中的LX，代表包含几层，L12就是完整模型
 
+roBERTa
+
 ```
 https://code.aliyun.com/qhduan/zh-roberta-wwm/raw/2c0d7fd709e4719a9ab2ca297f51b24e20586dbe/zh-roberta-wwm-L1.tar.gz
 https://code.aliyun.com/qhduan/zh-roberta-wwm/raw/2c0d7fd709e4719a9ab2ca297f51b24e20586dbe/zh-roberta-wwm-L3.tar.gz
-https://code.aliyun.com/qhduan/zh-roberta-wwm/raw/2c0d7fd709e4719a9ab2ca297f51b24e20586dbe/zh-roberta-wwm-L6.tar.gz
+https://code.aliyun.com/qhduan/zh-roberta-wwm/raw/096f6b9459fff95ee3ea6370c38bcbce3c883f7d/zh-roberta-wwm-L6.tar.gz
 https://code.aliyun.com/qhduan/zh-roberta-wwm/raw/2c0d7fd709e4719a9ab2ca297f51b24e20586dbe/zh-roberta-wwm-L9.tar.gz
 https://code.aliyun.com/qhduan/zh-roberta-wwm/raw/2c0d7fd709e4719a9ab2ca297f51b24e20586dbe/zh-roberta-wwm-L12.tar.gz
 ```
