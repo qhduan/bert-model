@@ -17,7 +17,7 @@ $ curl --output vocab.txt https://code.aliyun.com/qhduan/zh-bert/raw/0fb1d96ec21
 ```bash
 $ mkdir -p bert
 $ cd bert
-$ curl --output bert.tar.gz https://code.aliyun.com/qhduan/zh-roberta-wwm/raw/2c0d7fd709e4719a9ab2ca297f51b24e20586dbe/zh-roberta-wwm-L12.tar.gz
+$ curl --output bert.tar.gz https://code.aliyun.com/qhduan/bert/raw/0a53cbdce78a16053ab0034cefe21caa37bdf128/albert_base.tar.gz
 $ tar xvzf bert.tar.gz
 $ cd ..
 ```
