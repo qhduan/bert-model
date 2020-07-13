@@ -1,7 +1,7 @@
 
 const fs = require('fs')
 const tf = require('@tensorflow/tfjs-node')
-const { exit } = require('process')
+// const { exit } = require('process')
 const BertWordPieceTokenizer = require('tokenizers').BertWordPieceTokenizer
 
 
@@ -12,12 +12,18 @@ const BertWordPieceTokenizer = require('tokenizers').BertWordPieceTokenizer
  */
 function buildModel() {
     const input = tf.input({shape: [null, 768], dtype: 'float32'})
-    const rnn = tf.layers.bidirectional({
-        layer: tf.layers.lstm({units: 128, returnSequences: false})
-    })
-    const mask = tf.layers.masking({maskValue: 0.0})
+
+    // const rnn = tf.layers.bidirectional({
+    //     layer: tf.layers.lstm({units: 64, returnSequences: false})
+    // })
+    // const mask = tf.layers.masking({maskValue: 0.0})
+    // const dense = tf.layers.dense({units: 2, activation: 'softmax'})
+    // const output = dense.apply(rnn.apply(mask.apply(input)))
+
+    const hidden = tf.layers.dense({units: 512, activation: 'tanh'})
     const dense = tf.layers.dense({units: 2, activation: 'softmax'})
-    const output = dense.apply(rnn.apply(mask.apply(input)))
+    const output = dense.apply(hidden.apply(input))
+
     const model = tf.model({inputs: input, outputs: output})
     model.compile({
         optimizer: 'adam',
@@ -59,6 +65,7 @@ function buildModel() {
                     xs = bert.predict({
                         args_0: xs,
                     })['sequence_output']
+                    xs = xs.slice([0, 0, 0], [-1, 1, -1]).squeeze()
                     ys = tf.tensor(ys)
                     yield {xs, ys}
                     xs = []
@@ -73,7 +80,7 @@ function buildModel() {
     const trainObjs = fs.readFileSync(
         'train.json',
         {encoding: 'utf-8'}
-    ).split(/\n/).map(JSON.parse).slice(0, 1000)
+    ).split(/\n/).map(JSON.parse).slice(0, 5000)
     const devObjs = fs.readFileSync(
         'dev.json',
         {encoding: 'utf-8'}

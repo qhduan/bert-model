@@ -129,6 +129,10 @@ https://code.aliyun.com/qhduan/zh-bert/raw/0fb1d96ec2133fe25e66bee12fe387cbe1e52
 
 ### albert(new)
 
+tiny~15MB
+
+small~18MB
+
 base~40MB
 
 large~60MB
@@ -138,6 +142,11 @@ xlarge~200MB
 albert的学习率设计比较麻烦，建议尝试5e-5左右
 
 ```
+
+https://code.aliyun.com/qhduan/bert/raw/ff3e375101b6dc11e4aed06042aac7e4656c78ea/albert_tiny.tar.gz
+
+https://code.aliyun.com/qhduan/bert/raw/ff3e375101b6dc11e4aed06042aac7e4656c78ea/albert_small.tar.gz
+
 https://code.aliyun.com/qhduan/bert/raw/0a53cbdce78a16053ab0034cefe21caa37bdf128/albert_base.tar.gz
 
 https://code.aliyun.com/qhduan/bert/raw/0a53cbdce78a16053ab0034cefe21caa37bdf128/albert_large.tar.gz
