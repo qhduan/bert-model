@@ -57,7 +57,7 @@ function buildModel() {
                     })
                     xs = tf.tensor(xs)
                     xs = bert.predict({
-                        input_1: xs
+                        args_0: xs,
                     })['sequence_output']
                     ys = tf.tensor(ys)
                     yield {xs, ys}

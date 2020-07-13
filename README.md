@@ -125,6 +125,40 @@ model.evaluate(data_dev)
 https://code.aliyun.com/qhduan/zh-bert/raw/0fb1d96ec2133fe25e66bee12fe387cbe1e52938/vocab.txt
 ```
 
+新的版本(new)有四个输出，老的版本(old)只有三个输出
+
+### albert(new)
+
+base~40MB
+
+large~60MB
+
+xlarge~200MB
+
+albert的学习率设计比较麻烦，建议尝试5e-5左右
+
+```
+https://code.aliyun.com/qhduan/bert/raw/0a53cbdce78a16053ab0034cefe21caa37bdf128/albert_base.tar.gz
+
+https://code.aliyun.com/qhduan/bert/raw/0a53cbdce78a16053ab0034cefe21caa37bdf128/albert_large.tar.gz
+
+https://code.aliyun.com/qhduan/bert/raw/0a53cbdce78a16053ab0034cefe21caa37bdf128/albert_xlarge.tar.gz
+```
+
+### bert(new)
+
+~366MB
+
+```
+https://code.aliyun.com/qhduan/bert/raw/c046e359e0f48593db2762a691dae6b6b83942bb/zh-bert-L12.tar.gz
+
+https://code.aliyun.com/qhduan/bert/raw/c046e359e0f48593db2762a691dae6b6b83942bb/zh-bert-wwm-L12.tar.gz
+
+https://code.aliyun.com/qhduan/bert/raw/c046e359e0f48593db2762a691dae6b6b83942bb/zh-roberta-wwm-L12.tar.gz
+```
+
+### OLD(deprecated)
+
 谷歌最开始的预训练中文，12层，文件中的LX，代表包含几层，L12就是完整模型
 
 ```
