@@ -73,11 +73,11 @@ function buildModel() {
     const trainObjs = fs.readFileSync(
         'train.json',
         {encoding: 'utf-8'}
-    ).split(/\n/).map(JSON.parse)
+    ).split(/\n/).map(JSON.parse).slice(0, 1000)
     const devObjs = fs.readFileSync(
         'dev.json',
         {encoding: 'utf-8'}
-    ).split(/\n/).map(JSON.parse)
+    ).split(/\n/).map(JSON.parse).slice(0, 1000)
 
     console.log('Tokenize train dataset')
     for (const obj of trainObjs) {
@@ -99,7 +99,7 @@ function buildModel() {
     const model = buildModel()
     model.fitDataset(dsTrain, {
         batchesPerEpoch: Math.floor(trainObjs.length / batchSize),
-        epochs: 1,
+        epochs: 5,
         batch_size: batchSize,
         validationData: dsDev,
         validationBatches: Math.floor(devObjs.length / batchSize),
