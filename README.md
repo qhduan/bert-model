@@ -119,6 +119,62 @@ model.evaluate(data_dev)
 
 ## 模型下载地址
 
+
+最简单用法：
+
+```
+import tensorflow as tf
+import tensorflow_text
+import tensorflow_hub as hub
+tokenizer = hub.load(
+    'https://code.aliyun.com/qhduan/bert_v3/raw/092f8b2d0f35bcf73572a89205f8ab7a0187b2b5/bert_tokenizer_chinese.tar.gz'
+)
+albert = hub.load(
+    'https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_tiny.tar.gz'
+)
+out = albert(tokenizer(['你好']))
+
+assert out['sequence_output'].shape == (1, 2, 312)
+assert out['pooled_output'].shape == (1, 312)
+```
+
+```
+# 分词器 78k
+https://code.aliyun.com/qhduan/bert_v3/raw/092f8b2d0f35bcf73572a89205f8ab7a0187b2b5/bert_tokenizer_chinese.tar.gz
+
+# 16MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_tiny.tar.gz
+# 18MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_small.tar.gz
+# 39MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_base.tar.gz
+# 61MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_large.tar.gz
+# 207MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_xlarge.tar.gz
+
+# 364MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/bert.tar.gz
+# 364MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/bert_wwm.tar.gz
+
+# 46MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/electra_small.tar.gz
+# 91MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/electra_smallex.tar.gz
+# 365MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/electra_base.tar.gz
+
+# 364MB
+https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/roberta_wwm.tar.gz
+```
+
+
+
+
+
+## OLD METHOD
+
 词表，所有的中文BERT几乎都是基于谷歌最开始发布的词表
 
 ```
