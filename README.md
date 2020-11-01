@@ -140,33 +140,33 @@ assert out['pooled_output'].shape == (1, 312)
 
 ```
 # 分词器 78k
-https://code.aliyun.com/qhduan/bert_v3/raw/092f8b2d0f35bcf73572a89205f8ab7a0187b2b5/bert_tokenizer_chinese.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/bert_tokenizer_chinese.tar.gz
 
 # 16MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_tiny.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/albert_tiny.tar.gz
 # 18MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_small.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/albert_small.tar.gz
 # 39MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_base.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/albert_base.tar.gz
 # 61MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_large.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/albert_large.tar.gz
 # 207MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_xlarge.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/albert_xlarge.tar.gz
 
 # 364MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/bert.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/bert.tar.gz
 # 364MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/bert_wwm.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/bert_wwm.tar.gz
 
 # 46MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/electra_small.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/electra_small.tar.gz
 # 91MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/electra_smallex.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/electra_smallex.tar.gz
 # 365MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/electra_base.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/electra_base.tar.gz
 
 # 364MB
-https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/roberta_wwm.tar.gz
+https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/roberta_wwm.tar.gz
 ```
 
 
