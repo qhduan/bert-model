@@ -127,10 +127,10 @@ import tensorflow as tf
 import tensorflow_text
 import tensorflow_hub as hub
 tokenizer = hub.load(
-    'https://code.aliyun.com/qhduan/bert_v3/raw/092f8b2d0f35bcf73572a89205f8ab7a0187b2b5/bert_tokenizer_chinese.tar.gz'
+    'https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/bert_tokenizer_chinese.tar.gz'
 )
 albert = hub.load(
-    'https://code.aliyun.com/qhduan/bert_v3/raw/98354b8924d9b22fd7b9c4466e36ae9d42cc5a42/albert_tiny.tar.gz'
+    'https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/albert_tiny.tar.gz'
 )
 out = albert(tokenizer(['你好']))
 
