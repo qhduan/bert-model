@@ -84,9 +84,14 @@ https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f
 
 # 364MB
 https://code.aliyun.com/qhduan/bert_v4/raw/500019068f2c715d4b344c3e2216cef280a7f800/roberta_wwm.tar.gz
+
+# 3层roberta-wwm
+https://code.aliyun.com/qhduan/bert_part/raw/6c8b798cf7d6d0a12de20c4f90c870df2e107977/roberta_wwm_3.tar.gz
+
+# 3层roberta-wwm-large
+https://code.aliyun.com/qhduan/bert_part/raw/6c8b798cf7d6d0a12de20c4f90c870df2e107977/roberta_wwm_large_3.tar.gz
+
 ```
-
-
 
 
 
