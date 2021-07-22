@@ -97,9 +97,10 @@ https://code.aliyun.com/qhduan/bert_part/raw/6c8b798cf7d6d0a12de20c4f90c870df2e1
 # 3层roberta-wwm-large 217MB
 https://code.aliyun.com/qhduan/bert_part/raw/6c8b798cf7d6d0a12de20c4f90c870df2e107977/roberta_wwm_large_3.tar.gz
 
+# FinBERT https://github.com/valuesimplex/FinBERT
+https://code.aliyun.com/qhduan/bert_part/blob/0cf046f83ee12cb6ee0311eaa00f5f1e062f2c72/FinBERT.tar.gz
+
 ```
-
-
 
 ## OLD METHOD
 
